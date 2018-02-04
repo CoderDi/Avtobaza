@@ -1,11 +1,5 @@
-@font-face {
-  font-family: 'PFDinDisplayPro';
-  src: url('../fonts/PFDinDisplayPro.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-}
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
-/* Third Party */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=cyrillic');
+@import "partials/fonts";
 @import "normalize";
 
 @import "partials/variable";
