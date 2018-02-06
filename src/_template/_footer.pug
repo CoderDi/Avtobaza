@@ -3,6 +3,21 @@
   .popup__form--container
     .popup__close
     form.popup__form(action="")
+      span.popup__form_title Оставьте заявку!
+      span.popup__form_subtitle И мы свяжемся с Вами в течении 15 минут
+      .popup__form_inputs
+        label.popup__form_label
+          span Как Вас зовут?
+          input.popup__form_input(type="text" placeholder="Введите имя")
+        label.popup__form_label
+          span Контактный телефон*
+          input.popup__form_input(type="tel" placeholder="Введите телефон")
+        input.popup__form_submit(type="submit" value="Заказать звонок")
+      label.popup__form_check
+        input.popup__form_checkbox(type="checkbox" checked)
+        span.popup__form_check--custom
+        span.popup__form_check--text Я согласен с 
+          a(href="") обработкой персональных данных
 
 
 

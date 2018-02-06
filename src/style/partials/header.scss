@@ -140,6 +140,7 @@ a {
 
   &__submenu {
     position: absolute;
+    z-index: 99;
     top: 90%;
     left: 0;
     width: 271px;
