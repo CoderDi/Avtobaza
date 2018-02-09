@@ -231,3 +231,40 @@ section.chavo.wrapper
       .chavo__item_content
         span.chavo__item_quest МОЖНО ЛИ АРЕНДОВАТЬ АВТОБУС БЕЗ ВОДИТЕЛЯ
         p.chavo__item_answer Все транспортные средства сдаются в прокат только с водителям
+
+section.contacts
+  h2.title НАШИ 
+    b КОНТАКТЫ
+  .title__line
+    i
+  span.subtitle Наш адрес: 424000, г. Йошкар-Ола, ул. Панфилова, д. 35.
+    br
+    | Телефон: 
+    a(href="") 8 (8362) 42-28-90, 
+    | E-Mail: 
+    a(href="") info@avtobaza.ru, 
+    | Решим работы: Пн — Пт: с 08.00 до 17.00 
+  .map#map
+  .contacts__form
+    form.contacts__form_block(action="")
+      .contacts__form_header
+        span.contacts__form_title Заказать обратный звонок
+      .contacts__form_inputs
+        .popup__form_inputs
+          label.popup__form_label
+            span Как Вас зовут?
+            input.popup__form_input(type="text" placeholder="Введите имя")
+          label.popup__form_label
+            span Контактный телефон*
+            input.popup__form_input(type="tel" placeholder="Введите телефон")
+          input.popup__form_submit(type="submit" value="Заказать звонок")
+      .contacts__form_footer
+        label.popup__form_check
+          input.popup__form_checkbox(type="checkbox" checked)
+          span.popup__form_check--custom
+          span.popup__form_check--text Я согласен с 
+            a(href="") обработкой персональных данных
+
+
+
+

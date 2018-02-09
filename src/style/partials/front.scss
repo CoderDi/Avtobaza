@@ -287,7 +287,7 @@
     &_sym {
       width: 80px;
       height: 80px;
-      border: 5px solid #f5b144;
+      border: 5px solid #fff1e1;
       box-sizing: border-box;
       border-radius: 100%;
       display: flex;
@@ -323,8 +323,42 @@
 }
 
 
+.map {
+  margin-top: 35px;
+  height: 570px;
+  max-height: 80vh;
+}
+.contacts__form {
+  position: relative;
 
-
+  &_block {
+    position: absolute;
+    width: 360px;
+    bottom: 77px;
+    right: 130px;
+  }
+  &_inputs {
+    padding: 33px 0 1px;
+    background: url(../img/line-bg.png), rgba(255, 255, 255, .7);
+    & .popup__form_submit {
+      margin-bottom: 22px;
+    }
+  }
+  &_header {
+    padding: 15px;
+    background: #fff;
+  }
+  &_title {
+    padding-left: 35px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 4.00;
+  }
+  &_footer {
+    background: #fff;
+    padding: 15px 0;
+  }
+}
 
 
 
