@@ -12,6 +12,8 @@ a {
   text-decoration: none;
 }
 .header {
+  position: relative;
+    z-index: 2;
 
   &-top {
     padding: 15px 0 20px;

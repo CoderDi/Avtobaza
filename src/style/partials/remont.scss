@@ -1,0 +1,395 @@
+/*REMONT*/
+.page__banner {
+  height: 535px;
+  position: relative;
+
+  &_panel {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(0,0,0,.65);
+    box-sizing: border-box;
+  }
+  &_flex {
+    max-width: 1185px;
+    display: flex;
+    height: 115px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_item {
+    display: flex;
+    align-items: center;
+
+    & img {
+      display: block;
+      margin-right: 26px;
+    }
+    &-img {
+      flex-shrink: 0;
+    }
+    & span {
+      color: #ffffff;
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+
+  &_text {
+    padding-top: 100px;
+  }
+  &_title {
+    margin: 0 0 20px;
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 100;
+    text-transform: uppercase;
+
+    & b {
+      display: block;
+      font-weight: 900;
+    }
+    & span {
+      display: block;
+      text-transform: none;
+      font-weight: 100;
+    }
+  }
+  &_list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &_punkt {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  &_wrapper {
+    max-width: 1185px;
+  }
+}
+.remont__banner {
+  background: url(../img/remont-bg.png) no-repeat center;
+  background-size: cover;
+}
+
+
+.why-r {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 10px;
+  border-top: 1px solid #f2f2f2;
+
+  &__flex {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__list {
+    max-width: 540px;
+  }
+  &__item {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    &_img {
+      flex-shrink: 0;
+      padding-right: 24px;
+    }
+    &_title {
+      color: #000000;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+      display: block;
+    }
+    &__text {
+      color: #444444;
+      font-size: 16px;
+      font-weight: 100;
+    }
+  }
+}
+
+.get-price {
+  background: url(../img/get-price.jpg) no-repeat center;
+  background-size: cover;
+  position: relative;
+  padding: 50px 0 75px;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background-color: #000000;
+    opacity: 0.65;
+  }
+  &__wrapper {
+    position: relative;
+    max-width: 990px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #ffffff;
+  }
+
+  &__form {
+    margin-top: 45px;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+    padding: 30px 45px 40px;
+    background: rgba(0, 96, 127, .8);
+
+    & .get-price__form_check {
+      justify-content: flex-start;
+      margin-top: 15px;
+    }
+    & .popup__form_check--text, & .popup__form_check--text a {
+      color: #ffffff;
+    }
+
+    &_flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 24px;
+    }
+    &_label {
+      width: 280px;
+      padding-right: 10px;
+      & span {
+        display: block;
+        margin-bottom: 10px;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 300;
+      }
+    }
+    &_input {
+      display: block;
+      width: 100%;
+      height: 45px;
+      border: 1px solid #a4a4a4;
+      background-color: #ffffff;
+      box-sizing: border-box;
+      outline: none;
+      padding-left: 23px;
+      color: #a4a4a4;
+      font-family: "Museo Sans Cyrl";
+      font-size: 16px;
+      font-weight: 300;
+    }
+    &_submit {
+      width: 279px;
+      height: 45px;
+      box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.48);
+      background-color: #ffffff;
+      border: none;
+      outline: none;
+      box-sizing: border-box;
+      color: #ffffff;
+      font-size: 24px;
+      font-weight: 300;
+      cursor: pointer;
+      background-image: linear-gradient(to top, #b07f30 0%, #f5b144 100%);
+      &:hover {
+        box-shadow: none;
+      }
+    }
+    &_text {
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 100;
+      & a {
+        color: #ffffff;
+        font-weight: 900;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.remont {
+  padding: 30px 0 40px;
+
+  &__getbtn {
+    width: 279px;
+    height: 45px;
+    margin: 40px auto 0;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.48);
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #1fa98e 0%, #35d7b7 100%);
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+
+  &__wrapper {
+    max-width: 1200px;
+  }
+  &__text {
+    color: #444444;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 20px 0 0;
+    &_block {
+      padding-top: 1px;
+      padding-bottom: 55px;
+    }
+  }
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    &_btns {
+      width: 50%;
+    }
+    &_slider {
+      width: 600px;
+      height: 340px;
+    }
+  }
+  &__slider {
+
+    &_img {
+      height: 235px;
+
+      & img {
+        max-height: 100%;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &_list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    &_text {
+      column-count: 2;
+    }
+    &_listitem {
+      position: relative;
+      color: #444444;
+      font-size: 16px;
+      line-height: 22px;
+      font-weight: 300;
+      padding-left: 27px;
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: 14px;
+        height: 10px;
+        top: 6px;
+        left: 0;
+        background: url(../img/check.png) no-repeat center;
+      }
+    }
+  }
+  &__btn {
+    height: 65px;
+    background-color: #ffea8e;
+    position: relative;
+    padding-left: 95px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+
+    &_num {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 65px;
+      background-color: #ffea8e;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 500;
+      text-align: center;
+      border-right: 1px solid #fff;
+      transition: .2s ease-in-out;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & img {
+        display: none;
+      }
+    }
+    &_text {
+      color: #000000;
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 65px;
+      transition: .2s ease-in-out;
+    }
+    &:hover {
+      background-color: #ffda39;
+      & .remont__btn_num {
+        background-color: #ffda39;
+      }
+    }
+    &--active {
+      height: 85px;
+      padding-left: 60px;
+      background-color: #ffda39;
+
+      & .remont__btn_num {
+        width: 100px;
+        left: -70px;
+        background-color: #ffda39;
+        & span {
+          display: none;
+        }
+        & img {
+          display: block;
+        }
+      }
+      & .remont__btn_text {
+        line-height: 85px;
+        font-size: 24px;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
