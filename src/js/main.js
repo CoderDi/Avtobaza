@@ -9,6 +9,11 @@ $(document).ready(function() {
   $(".js-popup--open").click(function(){
     $(".popup").addClass("popup--show");
   });
+
+  $(".remont__btn").click(function(){
+    $(".remont__btn").removeClass("remont__btn--active");
+    $(this).addClass("remont__btn--active");
+  });
 });
 
 
