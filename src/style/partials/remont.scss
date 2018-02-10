@@ -373,7 +373,36 @@
 }
 
 
+.remont__slider {
 
+  & .slick-dots {
+    position: absolute;
+    margin: 0;
+    top: 210px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+    & li button {
+      display: block;
+      width: 9px;
+      height: 9px;
+      background-color: #ffea8e;
+      border: none;
+      padding: 0;
+      color: transparent;
+      box-sizing: border-box;
+      margin: 0 4px;
+      outline: none;
+      cursor: pointer;
+    }
+    & li.slick-active button, & li button:hover {
+      background-color: #ffda39;
+    }
+  }
+}
 
 
 

@@ -352,7 +352,8 @@
     padding-left: 35px;
     color: #000000;
     font-size: 18px;
-    font-weight: 4.00;
+    font-weight: 300;
+    background: url(../img/form.png) no-repeat center left;
   }
   &_footer {
     background: #fff;
@@ -361,7 +362,110 @@
 }
 
 
+.f-banner {
+  position: relative;
 
+  &__slider {
+
+    &_item {
+      height: 540px;
+      position: relative;
+    }
+    &_wrapper {
+      position: relative;
+      z-index: 2;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+    &_img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &_plash {
+      padding: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background-color: rgba(0, 0, 0, .65);
+    }
+    &_text {
+      color: #ffffff;
+      font-size: 40px;
+      font-weight: 300;
+      text-transform: uppercase;
+      & b {
+        display: block;
+        padding-top: 20px;
+        padding-bottom: 35px;
+        color: #ffffff;
+        font-size: 34px;
+        font-weight: 900;
+      }
+    }
+    &_btn {
+      width: 199px;
+      height: 31px;
+      border: 1px solid #ffffff;
+      background: url(../img/btn-arrow.png) no-repeat 177px center;
+      display: block;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 29px;
+      padding-left: 20px;
+      box-sizing: border-box;
+      text-transform: uppercase;
+    }
+  }
+
+  &__form {
+    top: 70px;
+
+    &_wrapper {
+      position: relative;
+      z-index: 10;
+    }
+  }
+}
+
+.f-banner__slider {
+
+  & .slick-dots {
+    position: absolute;
+    width: 100%;
+    padding: 0 0 25px;
+    margin: 0;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    justify-content: center;
+    display: flex;
+
+    & li button {
+      display: block;
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+      margin: 0 6px;
+      border: 3px solid #ffffff;
+      padding: 0;
+      color: transparent;
+      border-radius: 100%;
+      outline: none;
+      cursor: pointer;
+    }
+    & li.slick-active button, & li button:hover {
+      background-color: #00526d;
+    }
+  }
+}
 
 
 

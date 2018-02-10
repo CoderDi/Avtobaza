@@ -1,203 +1,271 @@
-//- section.cars.wrapper
-//-   h2.title ПОПУЛЯРНЫЙ 
-//-     b ТРАНСПОРТ 
-//-     | НАШЕГО АВТОПАРКА
-//-   .title__line
-//-     i
-//-   span.subtitle Краткосрочная аренда автомобилей для любых целей 
-//-     b от 5 до посадочных 20 мест.
-//-   .cars__list
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title Toyota LAND CRUISER
-//-         .cars__item_img
-//-           img(src="img/auto/tlc.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 400 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 5
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 4 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+section.f-banner
+  .f-banner__form_wrapper.wrapper
+    form.contacts__form_block.f-banner__form(action="")
+      .contacts__form_header
+        span.contacts__form_title Заказать обратный звонок
+      .contacts__form_inputs
+        .popup__form_inputs
+          label.popup__form_label
+            span Как Вас зовут?
+            input.popup__form_input(type="text" placeholder="Введите имя")
+          label.popup__form_label
+            span Контактный телефон*
+            input.popup__form_input(type="tel" placeholder="Введите телефон")
+          input.popup__form_submit(type="submit" value="Заказать звонок")
+      .contacts__form_footer
+        label.popup__form_check
+          input.popup__form_checkbox(type="checkbox" checked)
+          span.popup__form_check--custom
+          span.popup__form_check--text Я согласен с 
+            a(href="") обработкой персональных данных
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title Toyota Camry
-//-         .cars__item_img
-//-           img(src="img/auto/tc.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 350 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 5
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 3 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+  .f-banner__slider
+    .f-banner__slider_item
+      .f-banner__slider_wrapper.wrapper
+        .f-banner__slider_plash
+          span.f-banner__slider_text Наша работа —
+            b ПАССАЖИРСКИЕ ПЕРЕВОЗКИ 
+              br
+              | В ЙОШКАР-ОЛЕ И РМЭ
+          a.f-banner__slider_btn(href="") УЗНАТЬ ПОДРОБНЕЕ
+      .f-banner__slider_img
+        img(src="img/main-bg.jpg", alt="")
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title Ford Mondeo
-//-         .cars__item_img
-//-           img(src="img/auto/fm.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 350 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 5
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 2 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+    .f-banner__slider_item
+      .f-banner__slider_wrapper.wrapper
+        .f-banner__slider_plash
+          span.f-banner__slider_text РЕМОНТ АВТО —
+            b КУЗОВНЫЕ РАБОТЫ, ЗАМЕНА 
+              br
+              | МАСЛА, ШИНОМОНТАЖ
+          a.f-banner__slider_btn(href="") УЗНАТЬ ПОДРОБНЕЕ
+      .f-banner__slider_img
+        img(src="img/main-bg2.jpg", alt="")
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title HUNDAI SONATA
-//-         .cars__item_img
-//-           img(src="img/auto/hs.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 350 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 5
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 4 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+    .f-banner__slider_item
+      .f-banner__slider_wrapper.wrapper
+        .f-banner__slider_plash
+          span.f-banner__slider_text АВТОМОЙКА —
+            b ПОМЫТЬ МАШИНУ? 
+              br
+              | ЭТО К НАМ! НЕДОРОГО!
+          a.f-banner__slider_btn(href="") УЗНАТЬ ПОДРОБНЕЕ
+      .f-banner__slider_img
+        img(src="img/main-bg3.jpg", alt="")
+      
+    .f-banner__slider_item
+      .f-banner__slider_wrapper.wrapper
+        .f-banner__slider_plash
+          span.f-banner__slider_text АВТОСТОЯНКА —
+            b ТЕПЛАЯ, ОХРАНЯЕМАЯ 
+              br
+              | СТОЯНКА НА ПАНФИЛОВА
+          a.f-banner__slider_btn(href="") УЗНАТЬ ПОДРОБНЕЕ
+      .f-banner__slider_img
+        img(src="img/main-bg4.jpg", alt="")
+      
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title Волга
-//-         .cars__item_img
-//-           img(src="img/auto/volga.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 280 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 5
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 3 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title Volkswagen Crafter
-//-         .cars__item_img
-//-           img(src="img/auto/vc.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 800 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 27
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 2 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+section.cars.wrapper
+  h2.title ПОПУЛЯРНЫЙ 
+    b ТРАНСПОРТ 
+    | НАШЕГО АВТОПАРКА
+  .title__line
+    i
+  span.subtitle Краткосрочная аренда автомобилей для любых целей 
+    b от 5 до посадочных 20 мест.
+  .cars__list
+    .cars__item--container
+      .cars__item
+        span.cars__item_title Toyota LAND CRUISER
+        .cars__item_img
+          img(src="img/auto/tlc.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 400 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 5
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 4 часа
+        a.cars__item_btn.js-popup--open Заказать машину
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title FIAT DUCATO
-//-         .cars__item_img
-//-           img(src="img/auto/fd.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 300 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 27
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 2 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+    .cars__item--container
+      .cars__item
+        span.cars__item_title Toyota Camry
+        .cars__item_img
+          img(src="img/auto/tc.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 350 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 5
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 3 часа
+        a.cars__item_btn.js-popup--open Заказать машину
 
-//-     .cars__item--container
-//-       .cars__item
-//-         span.cars__item_title Газель
-//-         .cars__item_img
-//-           img(src="img/auto/gazel.jpg", alt="")
-//-         .cars__item_table
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value от 300 руб./час
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title2 Количество мест
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 27
-//-           .cars__item_line
-//-             span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
-//-             span.cars__item_line-dots
-//-             span.cars__item_line-value 2 часа
-//-         a.cars__item_btn.js-popup--open Заказать машину
+    .cars__item--container
+      .cars__item
+        span.cars__item_title Ford Mondeo
+        .cars__item_img
+          img(src="img/auto/fm.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 350 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 5
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 2 часа
+        a.cars__item_btn.js-popup--open Заказать машину
 
-//- section.reliable
-//-   .wrapper.reliable__wrapper
-//-     .reliable__line1
-//-     .reliable__line2
-//-     .reliable__line3
-//-     h2.title НАДЕЖНЫЙ И БЕЗОПАСНЫЙ 
-//-       b ПЕРЕВОЗЧИК
-//-     .reliable__list
-//-       .reliable__item
-//-         .reliable__item_icon
-//-           img(src="img/mobil.png", alt="")
-//-         span.reliable__item_num 01 
-//-           span —
-//-         span.reliable__item_title Мобильность
-//-         span.reliable__item_text Аренда автобуса обеспечивает прибытие нескольких десятков человек в необходимое место в точное время.
+    .cars__item--container
+      .cars__item
+        span.cars__item_title HUNDAI SONATA
+        .cars__item_img
+          img(src="img/auto/hs.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 350 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 5
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 4 часа
+        a.cars__item_btn.js-popup--open Заказать машину
+
+    .cars__item--container
+      .cars__item
+        span.cars__item_title Волга
+        .cars__item_img
+          img(src="img/auto/volga.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 280 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 5
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 3 часа
+        a.cars__item_btn.js-popup--open Заказать машину
+
+    .cars__item--container
+      .cars__item
+        span.cars__item_title Volkswagen Crafter
+        .cars__item_img
+          img(src="img/auto/vc.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 800 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 27
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 2 часа
+        a.cars__item_btn.js-popup--open Заказать машину
+
+    .cars__item--container
+      .cars__item
+        span.cars__item_title FIAT DUCATO
+        .cars__item_img
+          img(src="img/auto/fd.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 300 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 27
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 2 часа
+        a.cars__item_btn.js-popup--open Заказать машину
+
+    .cars__item--container
+      .cars__item
+        span.cars__item_title Газель
+        .cars__item_img
+          img(src="img/auto/gazel.jpg", alt="")
+        .cars__item_table
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title1 Стоимость аренды
+            span.cars__item_line-dots
+            span.cars__item_line-value от 300 руб./час
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title2 Количество мест
+            span.cars__item_line-dots
+            span.cars__item_line-value 27
+          .cars__item_line
+            span.cars__item_line-title.cars__item_line-title3 Минимальное время заказа
+            span.cars__item_line-dots
+            span.cars__item_line-value 2 часа
+        a.cars__item_btn.js-popup--open Заказать машину
+
+section.reliable
+  .wrapper.reliable__wrapper
+    .reliable__line1
+    .reliable__line2
+    .reliable__line3
+    h2.title НАДЕЖНЫЙ И БЕЗОПАСНЫЙ 
+      b ПЕРЕВОЗЧИК
+    .reliable__list
+      .reliable__item
+        .reliable__item_icon
+          img(src="img/mobil.png", alt="")
+        span.reliable__item_num 01 
+          span —
+        span.reliable__item_title Мобильность
+        span.reliable__item_text Аренда автобуса обеспечивает прибытие нескольких десятков человек в необходимое место в точное время.
  
-//-       .reliable__item
-//-         .reliable__item_icon
-//-           img(src="img/cars.png", alt="")
-//-         span.reliable__item_num 02 
-//-           span —
-//-         span.reliable__item_title Опытные водители
-//-         span.reliable__item_text Мы располагаем штатом опытных водителей со стажем работы не менее 10 лет.
+      .reliable__item
+        .reliable__item_icon
+          img(src="img/cars.png", alt="")
+        span.reliable__item_num 02 
+          span —
+        span.reliable__item_title Опытные водители
+        span.reliable__item_text Мы располагаем штатом опытных водителей со стажем работы не менее 10 лет.
 
-//-       .reliable__item
-//-         .reliable__item_icon
-//-           img(src="img/comfort.png", alt="")
-//-         span.reliable__item_num 03 
-//-           span —
-//-         span.reliable__item_title Комфортабельность
-//-         span.reliable__item_text Мы стараемся сделать так, чтобы перевозки сопровождались сохранением как душевного, так и физического комфорта пассажиров.
+      .reliable__item
+        .reliable__item_icon
+          img(src="img/comfort.png", alt="")
+        span.reliable__item_num 03 
+          span —
+        span.reliable__item_title Комфортабельность
+        span.reliable__item_text Мы стараемся сделать так, чтобы перевозки сопровождались сохранением как душевного, так и физического комфорта пассажиров.
 
 section.chavo.wrapper
   h2.title ЧАСТО ЗАДАВАЕМЫЕ 
@@ -237,14 +305,18 @@ section.contacts
     b КОНТАКТЫ
   .title__line
     i
-  span.subtitle Наш адрес: 424000, г. Йошкар-Ола, ул. Панфилова, д. 35.
+  span.subtitle.contacts-subtitle Наш адрес: 
+    span 424000, г. Йошкар-Ола, ул. Панфилова, д. 35.
     br
-    | Телефон: 
-    a(href="") 8 (8362) 42-28-90, 
-    | E-Mail: 
-    a(href="") info@avtobaza.ru, 
-    | Решим работы: Пн — Пт: с 08.00 до 17.00 
-  .map#map
+    span.contacts-subtitle Телефон: 
+      a(href="") 8 (8362) 42-28-90, 
+    span.contacts-subtitle E-Mail: 
+      a(href="") info@avtobaza.ru, 
+    span.contacts-subtitle Режим работы: 
+      span Пн — Пт: с 08.00 до 17.00 
+  .map#map.map-main
+  a.contacts_btn(href="") СМОТРЕТЬ НА КАРТЕ
+  span.contacts-get-form.js-popup--open Заказать звонок
   .contacts__form
     form.contacts__form_block(action="")
       .contacts__form_header
